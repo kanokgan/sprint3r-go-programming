@@ -90,8 +90,10 @@ func main() {
 		fmt.Println("not found key hello1")
 	}
 
-
-
+	testFor := []int{1, 2, 3, 4, 5}
+	for i:=0 ; i < len(testFor); i++ {
+		fmt.Println(testFor[i])
+	}
 
 
 
