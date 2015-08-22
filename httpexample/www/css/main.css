@@ -1,0 +1,87 @@
+html{
+	background: #DEEAF1;
+	color: #2c3e50;
+}
+* {
+	font: 16px verdana;
+}
+.wrapper{
+	padding: 5px;
+}
+.content{
+	width: 600px;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+label{
+	display: block;
+}
+input, textarea{
+	width: calc(100% - 20px);
+	padding: 10px;
+	border: 1px solid #ACCADA;
+	margin: 5px 0 15px;
+}
+button{
+	padding: 10px 25px;
+	background: #2980b9;
+	border: 1px solid transparent;
+	color: white;
+	transition: linear 0.2s background;
+}
+button:hover{
+	background: #333;
+	cursor: pointer;
+}
+textarea:focus, input:focus, button:focus{
+	outline: 0;
+	border: 1px solid #106595;
+}
+button:focus{
+	background: #333;
+}
+button:disabled{
+	cursor: not-allowed;
+	background: #95a5a6;
+}
+
+form .error{
+	color: #e74c3c;
+	display: block;
+	padding: 3px 0;
+	margin-bottom: 5px;
+	margin-top: -10px;
+}
+input.ng-dirty.ng-invalid, textarea.ng-dirty.ng-invalid{
+	border: 1px solid #e74c3c;
+}
+input.ng-dirty.ng-valid, textarea.ng-dirty.ng-valid{
+	border: 1px solid #27ae60;
+}
+
+h1,h2{ color: #106595; }
+h1{ font-size: 24px; }
+h2{ font-size: 20px; }
+
+#contact-header{
+	padding-top: 40px;
+}
+
+#overlay{
+	background: rgba(0,0,0,0.8);
+	color: white;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 20%;
+}
+#overlay button{
+	background: #277AB0;
+}
+#overlay button:hover, #overlay button:focus{
+	background: #3498db;
+}
