@@ -84,7 +84,11 @@ func main() {
 		fmt.Println("never run")
 	}
 
-
+	if _, found := testMap["hello1"]; found {
+		fmt.Println("found key hello1")
+	} else {
+		fmt.Println("not found key hello1")
+	}
 
 
 
