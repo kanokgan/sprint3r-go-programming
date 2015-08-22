@@ -8,10 +8,30 @@ type Contact struct {
 }
 
 func main() {
-	var contact = Contact {
+	var contact = Contact {					// value type
 		Name: "Kanokgan",
 		Email: "admin@kanokgan.com",
 	}
 
 	fmt.Println(contact)
+
+
+	var contact2 = &Contact {				// reference type
+		Name: "Kanokgan",
+		Email: "admin@kanokgan.com",
+	}
+
+	fmt.Println(contact2)
+
+	var contact3 = contact2
+	contact3.Name = "xxx"
+
+	fmt.Println(contact)
+	fmt.Println(contact2)
+	fmt.Println(contact3)
+
 }
+
+
+
+
