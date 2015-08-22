@@ -3,34 +3,39 @@ package main
 import "fmt"
 
 func main() {
-	hello := "Hello World" // string
-	fmt.Println(hello)
+	HelloWorld := "Hello World" 		// string
+	fmt.Println(HelloWorld)
 
-	var testInt int = 1 // int
+	var testInt int = 1 				// int
+	fmt.Println(testInt)
 
-	var testBool bool = true // bool
+	var testBool bool = true 			// bool
+	fmt.Println(testBool)
 
-	var testfloat32 float32 = 1.0 // float32
+	var testfloat32 float32 = 1.0 		// float32
+	fmt.Println(testfloat32)
 
-	var testfloat64 float64 = 1.0 // float64
+	var testfloat64 float64 = 1.0 		// float64
+	fmt.Println(testfloat64)
 
-	var teststring string = "string" // string
+	var teststring string = "string" 	// string
+	fmt.Println(teststring)
 
-	var testunit uint = 1 // uint
+	var testunit uint = 1 				// uint
+	fmt.Println(testunit)
 
-	var testint64 int64 = 1 // int64, long (in other language)
+	var testint64 int64 = 1 			// int64, long (in other language)
+	fmt.Println(testint64)
 
-	var testbyte byte = 1 // byte
+	var testbyte byte = 1 				// byte
+	fmt.Println(testbyte)
 
 	var testCastStringtoByte []byte = []byte("Hello World") // cast string to byte array 
-
-	fmt.Println(testInt)
-	fmt.Println(testBool)
-	fmt.Println(testfloat32)
-	fmt.Println(testfloat64)
-	fmt.Println(teststring)
-	fmt.Println(testunit)
-	fmt.Println(testint64)
-	fmt.Println(testbyte)
 	fmt.Println(testCastStringtoByte)
+
+	var testIntArray []int = []int{1, 2, 3, 4, 5} 		// array
+	fmt.Println(testIntArray)
+
+	testIntArray[1] = 9
+	fmt.Println(testIntArray)
 }
