@@ -76,8 +76,12 @@ func main() {
 		fmt.Println(v)
 	}
 
-	if 0 == 0 {
-		fmt.Println("0 == 0", "is return true")
+	if 0 == 1 {
+		fmt.Println("0 == 1")
+	} else if 1 == 1 {
+		fmt.Println("1 == 1")
+	} else {
+		fmt.Println("never run")
 	}
 
 
