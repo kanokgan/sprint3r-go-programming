@@ -66,7 +66,8 @@ func main() {
 
 		ContactList = append(ContactList, newContact)
 
-		fmt.Fprint(w, "saved")
+		http.Redirect(w, r, "/contact/list", 301)
+		//fmt.Fprint(w, "saved")
 	})
 	
 	http.HandleFunc("/contact/list", func(w http.ResponseWriter, r *http.Request) {
