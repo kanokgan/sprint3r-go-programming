@@ -33,9 +33,14 @@ func main() {
 	var testCastStringtoByte []byte = []byte("Hello World") // cast string to byte array 
 	fmt.Println(testCastStringtoByte)
 
-	var testIntArray []int = []int{1, 2, 3, 4, 5} 		// array
+	var testIntArray [6]int = [6]int{1, 2, 3, 4, 5} 		// array
 	fmt.Println(testIntArray)
 
 	testIntArray[1] = 9
 	fmt.Println(testIntArray)
+
+	var testSlice []int = []int{1, 2, 3, 4, 5, 6}
+
+	testSlice = append(testSlice, 12, 3, 1)
+	fmt.Println(testSlice)
 }
