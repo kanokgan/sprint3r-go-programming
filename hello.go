@@ -21,4 +21,16 @@ func main() {
 	var testint64 int64 = 1 // int64, long (in other language)
 
 	var testbyte byte = 1 // byte
+
+	var testCastStringtoByte []byte = []byte("Hello World") // cast string to byte array 
+
+	fmt.Println(testInt)
+	fmt.Println(testBool)
+	fmt.Println(testfloat32)
+	fmt.Println(testfloat64)
+	fmt.Println(teststring)
+	fmt.Println(testunit)
+	fmt.Println(testint64)
+	fmt.Println(testbyte)
+	fmt.Println(testCastStringtoByte)
 }
