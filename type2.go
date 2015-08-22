@@ -7,7 +7,11 @@ type Contact struct {
 	Email string
 }
 
-func FullContact(contact Contact) string {
+func (contact *Contact) FullContact() string {
+	return contact.Name + " " + contact.Email
+}
+
+func FullContact(contact Contact) string {			// declare function
 	return contact.Name + " " + contact.Email
 }
 
@@ -35,6 +39,7 @@ func main() {
 	fmt.Println(contact3)
 
 	fmt.Println(FullContact(contact))
+	fmt.Println(contact.FullContact())
 }
 
 
