@@ -49,4 +49,51 @@ func main() {
 	var fooArr = [7]int{ 1, 2, 3, 4, 5, 6, 7}
 	var testArraytoSlice  []int = fooArr[0:len(fooArr)] // หั่น testArraytoSlice ออกมาจาก fooArr รูปย่อคือ fooArr[:] สามารถใส่ช่วงที่เล็กกว่าได้แต่กว้างกว่าไม่ได้
 	fmt.Println("testArraytoSlice length =", len(testArraytoSlice))
+
+
+	var testMake []int = make([]int, 5)
+	fmt.Println(testMake, len(testMake))
+
+	var testMap = map[string]string{
+		"hello": "world",
+		"hello2": "world2",
+		"hello3": "world3",
+	}
+	fmt.Println(testMap, len(testMap))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
