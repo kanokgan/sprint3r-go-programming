@@ -55,13 +55,30 @@ func main() {
 	fmt.Println(testMake, len(testMake))
 
 	var testMap = map[string]string{
-		"hello": "world",
+		"hello1": "world",
 		"hello2": "world2",
 		"hello3": "world3",
 	}
 	fmt.Println(testMap, len(testMap))
 
+	testMap["hello4"] = "world4"
+	fmt.Println(testMap, len(testMap))
 
+	delete(testMap, "hello2")
+	fmt.Println(testMap, len(testMap))
+
+	for k, v := range testMap {
+		fmt.Println(k, v)
+	}
+
+	testloop := []int{1, 2, 3, 4}
+	for _, v := range testloop {
+		fmt.Println(v)
+	}
+
+	if 0 == 0 {
+		fmt.Println("0 == 0", "is return true")
+	}
 
 
 
